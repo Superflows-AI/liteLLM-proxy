@@ -4,7 +4,7 @@ import os
 os.environ["OPENAI_API_KEY"] = "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"
 
 openai.api_key = os.environ["OPENAI_API_KEY"]
-openai.api_base ="http://localhost:4000"
+openai.api_base ="http://localhost:5000"
 
 messages = [
     {
