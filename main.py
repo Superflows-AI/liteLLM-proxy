@@ -93,8 +93,8 @@ def get_models():
 
 if __name__ == "__main__":
   from waitress import serve
-  print("Running on port 5000")
-  serve(app, host="0.0.0.0", port=5000, threads=500)
+  print(f"Running on port {os.environ['PORT']}")
+  serve(app, host="0.0.0.0", port=os.environ["PORT"], threads=500)
 
 # ############ Caching ###################################
 # # make a new endpoint with caching
